@@ -1,10 +1,10 @@
 FROM node:dubnium-slim
 
-RUN mkdir -p /usr/local/fizzbuzz
+RUN mkdir -p /usr/local/fizzbuzz/src
 
 WORKDIR /usr/local/fizzbuzz
 
-ADD CODE_SOURCE_FOR_BUILD/ ./
+ADD CODE_SOURCE_FOR_BUILD/ ./src
 
 RUN npm i --production 
 
