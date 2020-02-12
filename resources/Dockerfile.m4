@@ -1,14 +1,14 @@
 FROM node:dubnium-slim
 
-RUN mkdir -p /usr/local/app
+RUN mkdir -p /usr/local/fizzbuzz
 
-WORKDIR /usr/app
+WORKDIR /usr/local/fizzbuzz
 
 ADD CODE_SOURCE_FOR_BUILD/ ./
 
 RUN npm i --production 
 
-VOLUME [ "/usr/local/app/src/config", "/var/log" ]
+VOLUME [ "/usr/local/fizzbuzz/arc/app/config", "/var/log" ]
 
 EXPOSE SERVICE_PORT
 
