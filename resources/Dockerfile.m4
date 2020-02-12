@@ -8,7 +8,7 @@ ADD CODE_SOURCE_FOR_BUILD/ ./
 
 RUN npm i --production 
 
-VOLUME [ "/usr/local/fizzbuzz/arc/app/config", "/var/log" ]
+VOLUME [ "/usr/local/fizzbuzz/src/app/config", "/var/log" ]
 
 EXPOSE SERVICE_PORT
 
